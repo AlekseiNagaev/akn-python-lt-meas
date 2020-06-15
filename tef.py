@@ -8,7 +8,7 @@ def load_file(str):
   elif 'cur' in data.dtype.names:
     cur = mdata['data']['cur'][0,0][0].tolist()
   else:
-    print("Exception #1.\n Peace out!")
+    print("Exception #1.\n Wrong data names in file!")
     sys.exit()
   if len(cur) == 1:
     cur = list(map(list, zip(*cur)))
