@@ -1,7 +1,7 @@
 import PyDAQmx as nidaq
 import numpy as np
 import time
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 t = nidaq.Task()
 t.CreateAIVoltageChan("Dev1/ai0", None, nidaq.DAQmx_Val_Diff, 0, 0.1, nidaq.DAQmx_Val_Volts, None)
 t.CfgSampClkTiming("", int(1e6), nidaq.DAQmx_Val_Rising, nidaq.DAQmx_Val_FiniteSamps, int(20e6))
